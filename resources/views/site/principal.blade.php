@@ -1,6 +1,13 @@
 <!-- Extendendo o layout que está localizado na view.site.layouts.basico" -->
 @extends('site.layouts.basico')
 
+<!-- O primeiro paramentro 'titulo' é como se fosse uma variavel,
+ o segundo parametro 'home' seria o valor dessa variavel
+ isso significa, que lá no layout.basico, aonde eu chamar a função yield('titulo'),
+ vai substituir pelo valor dessa variavel
+-->
+@section('titulo',$titulo)
+
 <!-- enviando t0do conteudo apartir do section para o corpo do layout basico -->
 @section('conteudo')
     <div class="topo">
