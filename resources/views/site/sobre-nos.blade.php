@@ -1,30 +1,8 @@
-    <!-- Extendendo o layout que está localizado na view.site.layouts.basico" -->
-    @extends('site.layouts.basico')
+@extends('site.layouts.basico')
 
-<!-- O primeiro paramentro 'titulo' é como se fosse uma variavel,
- o segundo parametro 'home' seria o valor dessa variavel
- isso significa, que lá no layout.basico, aonde eu chamar a função yield('titulo'),
- vai substituir pelo valor dessa variavel
--->
-    @section('titulo',$titulo)
+@section('titulo', 'Sobre Nós')
 
-    <!-- enviando t0do conteudo apartir do section para o corpo do layout basico -->
-    @section('conteudo')
-    <div class="topo">
-
-        <div class="logo">
-            <img src="img/logo.png">
-        </div>
-
-        <div class="menu">
-            <ul>
-                <li><a href="{{ route('site.index') }}">Principal</a></li>
-                <li><a href="{{ route('site.sobrenos') }}">Sobre Nós</a></li>
-                <li><a href="{{ route('site.contato') }}">Contato</a></li>
-            </ul>
-        </div>
-    </div>
-
+@section('conteudo')
     <div class="conteudo-pagina">
         <div class="titulo-pagina">
             <h1>Olá, eu sou o Super Gestão</h1>
@@ -39,9 +17,9 @@
     <div class="rodape">
         <div class="redes-sociais">
             <h2>Redes sociais</h2>
-            <img src="{{asset("img/facebook.png")}}">
-            <img src="{{asset("img/linkedin.png")}}">
-            <img src="{{asset('img/youtube.png')}}">
+            <img src="{{ asset('img/facebook.png') }}">
+            <img src="{{ asset('img/linkedin.png') }}">
+            <img src="{{ asset('img/youtube.png') }}">
         </div>
         <div class="area-contato">
             <h2>Contato</h2>
@@ -51,8 +29,7 @@
         </div>
         <div class="localizacao">
             <h2>Localização</h2>
-            <img src="{{asset("img/mapa.png")}}">
+            <img src="{{ asset('img/mapa.png') }}">
         </div>
     </div>
-    @endsection
-
+@endsection

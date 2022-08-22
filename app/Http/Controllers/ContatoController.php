@@ -6,13 +6,9 @@ use Illuminate\Http\Request;
 
 class ContatoController extends Controller
 {
-    public function principal()
-    {
-       /** enviando a array associativa como variavel e valor para o blade,
-       o'titulo' é o nome da variavel setata na view
-        * 'Contato(teste)' é o valor que você está atribuindo a essa variavel
-        **/
+    public function contato() {
 
-        return view('site.contato', ['titulo' => 'Contato']);
+        var_dump($_POST);
+        return view('site.contato', ['titulo' => 'Contato (teste)']);
     }
 }

@@ -6,13 +6,7 @@ use Illuminate\Http\Request;
 
 class SobreNosController extends Controller
 {
-    public function principal()
-    {
-        /** enviando a array associativa como variavel e valor para o blade,
-        o'titulo' é o nome da variavel setata na view
-         * 'Contato(teste)' é o valor que você está atribuindo a essa variavel
-         **/
-
-        return view('site.sobre-nos',['titulo' => 'Sobre-Nós']);
+    public function sobreNos() {
+        return view('site.sobre-nos');
     }
 }

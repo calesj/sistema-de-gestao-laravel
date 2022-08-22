@@ -1,46 +1,45 @@
-<h3>
-    Fornecedor
-</h3>
-@php $i = 0 @endphp
-    @forelse( $fornecedores as $fornecedor )
-        Iteração : {{ $loop->iteration }}
+<h3>Fornecedor</h3>
+
+@php
+    /*
+    if(empty($variavel)) {} //retornar true se a variável estiver vazia
+    - ''
+    - 0
+    - 0.0
+    - '0'
+    - null
+    - false
+    - array()
+    - $var
+    */
+@endphp
+
+@isset($fornecedores)
+
+    @forelse($fornecedores as $indice => $fornecedor)
+        Iteração atual: {{ $loop->iteration }}
         <br>
         Fornecedor: {{ $fornecedor['nome'] }}
         <br>
         Status: {{ $fornecedor['status'] }}
         <br>
-        CNPJ: {{ $fornecedor['cnpj'] ?? 'nenhum dado foi dado'}}
+        CNPJ: {{ $fornecedor['cnpj'] ?? '' }}
         <br>
-        Telefone: ({{ $fornecedor['ddd'] ?? '' }}) {{ $fornecedor['telefone'] }}
+        Telefone: ({{ $fornecedor['ddd'] ?? '' }}) {{ $fornecedor['telefone'] ?? '' }}
+        <br>
         @if($loop->first)
-            primeira interação do loop
+            Primeira iteração no loop
+
+            <br>
+            Total de registros: {{ $loop->count }}
         @endif
+
         @if($loop->last)
-            ultima interação do loop
-            {{ $loop->count }}
+            Última iteração no loop
         @endif
         <hr>
-        <br>
-
-            @switch($fornecedor['ddd'])
-                @case('11')
-                São Paulo - SP
-                @break
-
-                @case('32')
-                Juiz de Fora - MG
-                @break
-
-                @case('21')
-                Rio de Janeiro - RJ
-                @break
-
-                @default
-                Estado não identificado
-            @endswitch
-        <br><br>
-            @php $i++ @endphp
     @empty
-        não existe fornecedores
+        Não existem fornecedores cadastrados!!!
     @endforelse
+@endisset
 
