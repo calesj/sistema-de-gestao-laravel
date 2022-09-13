@@ -1,7 +1,9 @@
 @extends('site.layouts.basico')
 
+<!-- Enviando a palavra 'Home' como parâmetro titulo para o 'basico.blade.php'-->
 @section('titulo', $titulo)
 
+<!-- Enviando o conteudo inteiro abaixo como parâmetro 'conteudo' para o 'basico.blade.php'-->
 @section('conteudo')
     <div class="conteudo-pagina">
         <div class="titulo-pagina">
@@ -10,14 +12,16 @@
 
         <div class="informacao-pagina">
             <div class="contato-principal">
-                @component('site.layouts._components.form_contato', ['classe' => 'borda-preta'])
+
+                <!-- tratando o form_contato como component, imprimindo ele aqui embaixo
+                 e enviando os parametro 'classe', 'motivo_contato' com seus devidos valores para ele -->
+                @component('site.layouts._components.form_contato', ['classe' => 'borda-preta', 'motivos_contato' => $motivos_contato])
                 <p>A nossa equipe analisará a sua mensagem e retornaremos o mais brevemente possível</p>
                 <p>Nosso tempo médio de resposta é de 48 horas</p>
                 @endcomponent
             </div>
         </div>
     </div>
-
     <div class="rodape">
         <div class="redes-sociais">
             <h2>Redes sociais</h2>
