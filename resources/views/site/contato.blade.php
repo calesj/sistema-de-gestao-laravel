@@ -15,7 +15,7 @@
 
                 <!-- tratando o form_contato como component, imprimindo ele aqui embaixo
                  e enviando os parametro 'classe', 'motivo_contato' com seus devidos valores para ele -->
-                @component('site.layouts._components.form_contato', ['classe' => 'borda-preta', 'motivos_contato' => $motivos_contato])
+                @component('site.layouts._components.form_contato', ['classe' => 'borda-preta', 'motivo_contatos' => $motivo_contatos])
                 <p>A nossa equipe analisará a sua mensagem e retornaremos o mais brevemente possível</p>
                 <p>Nosso tempo médio de resposta é de 48 horas</p>
                 @endcomponent

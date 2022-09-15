@@ -33,7 +33,7 @@
 
                 <!-- tratando o form_contato como component, imprimindo ele aqui embaixo
                  e enviando um parametro 'classe' com o valor 'borda-branca' para ele -->
-                @component('site.layouts._components.form_contato', ['classe' => 'borda-branca'])
+                @component('site.layouts._components.form_contato', ['classe' => 'borda-branca','motivo_contatos' => $motivo_contatos])
                 @endcomponent
             </div>
         </div>
