@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\LogAccessoMiddleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,10 +19,10 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', 'PrincipalController@principal')->name('site.index');
+Route::get('/', 'PrincipalController@principal')->middleware(LogAccessoMiddleware::class)->name('site.index');
 Route::get('/sobre-nos', 'SobreNosController@sobreNos')->name('site.sobrenos');
-Route::get('/contato', 'ContatoController@contato')->name('site.contato');
-Route::post('/contato', 'ContatoController@contato')->name('site.contato');
+Route::get('/contato', 'ContatoController@contato')->middleware(LogAccessoMiddleware::class)->name('site.contato');
+Route::post('/contato', 'ContatoController@salvar')->name('site.contato');
 Route::get('/login', function(){return 'Login';})->name('site.login');
 
 Route::prefix('/app')->group(function() {
