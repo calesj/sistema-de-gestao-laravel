@@ -27,7 +27,7 @@ class ContatoController extends Controller
             //$contato = new SiteContato();
             //$contato->create($request->all());
 
-    //simulando conteudo do banco e enviando esse array para a view site.contato
+    //pegando todos os motivosContato do banco e enviando esse array para a view site.contato
         $motivo_contatos = MotivoContato::all();
         return view('site.contato', ['titulo' => 'Contato (teste)', 'motivo_contatos' => $motivo_contatos]);
     }
