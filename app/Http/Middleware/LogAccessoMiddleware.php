@@ -19,9 +19,6 @@ class LogAccessoMiddleware
     {
         //$request - manipular
 
-        //essa linha vai liberar o pedido para o proximo passo, no caso
-        //o $next esta liberando o pedido para aplicação
-
         //return $next($request);
 
         //pegando o IP do browser que está vindo no request e armazenando na variavel $ip
@@ -30,9 +27,13 @@ class LogAccessoMiddleware
         //pegando a URL que o browser do cliente que fez o pedido está tentando acessar
         $url = $request->getRequestUri();
 
-        print_r($url);
+        //salvando no banco o ip, e a url que o ip requisitou
         LogAcesso::create(['log' => "$ip xyz requisitou a rota $url"]);
-        return Response('Chegamos no Middleware e finalizamos aqui');
+
+        return $next($request);
+        //o $next esta liberando o pedido para a proxima etapa
+        //return $next($request);
+
         //return $next($request);
     }
 }
