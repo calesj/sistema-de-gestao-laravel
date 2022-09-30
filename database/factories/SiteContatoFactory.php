@@ -19,7 +19,7 @@ $factory->define(SiteContato::class, function (Faker $faker) {
         'email' => $faker->unique()->email,
 
         //vai gerar numeros aleatorios entre 1 e 3
-        'motivo_contato' => $faker->numberBetween(1,3),
+        'motivo_contatos_id' => $faker->numberBetween(1,3),
 
         'mensagem' => $faker->text(200)
     ];

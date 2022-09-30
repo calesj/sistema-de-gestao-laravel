@@ -1,7 +1,9 @@
 @extends('site.layouts.basico')
 
+<!-- Enviando a palavra 'Home' como parâmetro titulo para o 'basico.blade.php'-->
 @section('titulo', 'Sobre Nós')
 
+<!-- Enviando o conteudo inteiro abaixo como parâmetro 'conteudo' para o 'basico.blade.php'-->
 @section('conteudo')
     <div class="conteudo-pagina">
         <div class="titulo-pagina">

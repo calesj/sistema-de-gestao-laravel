@@ -9,24 +9,6 @@ use App\SiteContato;
 class ContatoController extends Controller
 {
     public function contato(Request $request) {
-/*
-        echo '<pre>';
-        print_r($request->all());
-        echo '</pre>';
-        return view('site.contato', ['titulo' => 'Contato (teste)']);
-
-        $contato = new SiteContato();
-        $contato->nome = $request->input('nome');
-        $contato->telefone = $request->input('telefone');
-        $contato->email = $request->input('email');
-        $contato->motivo_contato = $request->input('motivo_contato');
-        $contato->mensagem = $request->input('mensagem');
-
-        $contato->save();
-*/
-            //$contato = new SiteContato();
-            //$contato->create($request->all());
-
     //pegando todos os motivosContato do banco e enviando esse array para a view site.contato
         $motivo_contatos = MotivoContato::all();
         return view('site.contato', ['titulo' => 'Contato (teste)', 'motivo_contatos' => $motivo_contatos]);
