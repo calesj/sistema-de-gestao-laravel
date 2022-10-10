@@ -19,7 +19,7 @@
 
         <div class="informacao-pagina">
             <div style="width: 30%; margin-left: auto; margin-right: auto;">
-                {{ //enviando o produto, e as unidades para o componente e printando ele aqui na tela }}
+                 <!--//enviando o produto, e as unidades para o componente e printando ele aqui na tela  -->
                 @component('app.produto._components.form_create_edit', ['produto' => $produto, 'unidades' => $unidades])
                 @endcomponent
             </div>
