@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24d667be-6e05-4824-8f6f-81bd0716ba11" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Produto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Unidade.php" afterDir="false" />
+    <list default="true" id="24d667be-6e05-4824-8f6f-81bd0716ba11" name="Changes" comment="feat - add PedidoController Model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContatoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContatoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FornecedorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FornecedorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProdutoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProdutoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/SiteContato.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/SiteContato.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/SiteContatoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/SiteContatoFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app/fornecedor/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/fornecedor/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Produto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/cliente.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/app/layouts/_partials/topo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/layouts/_partials/topo.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/sobre-nos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/sobre-nos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/teste.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/teste.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +149,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/PhpStormProjects/sistema-gestao-laravel&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/sistema-de-gestao-laravel&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -169,14 +160,17 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\sistema-de-gestao-laravel\resources\views\app" />
+      <recent name="D:\sistema-de-gestao-laravel" />
       <recent name="D:\PhpStormProjects\sistema-gestao-laravel" />
       <recent name="C:\Users\Cales\PhpstormProjects\laravel-vuejs-integration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\sistema-de-gestao-laravel\resources\views\app\pedido\_components" />
+      <recent name="D:\sistema-de-gestao-laravel\resources\views\app" />
+      <recent name="D:\sistema-de-gestao-laravel\database\migrations" />
       <recent name="D:\PhpStormProjects\sistema-gestao-laravel\resources\views\app\fornecedor" />
       <recent name="D:\PhpStormProjects\sistema-gestao-laravel\app" />
-      <recent name="D:\PhpStormProjects\sistema-gestao-laravel\app\Http" />
-      <recent name="D:\PhpStormProjects\sistema-gestao-laravel\app\Http\Controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -200,7 +194,161 @@
       <workItem from="1661170277532" duration="1059000" />
       <workItem from="1664540585470" duration="1432000" />
       <workItem from="1664542421716" duration="2223000" />
+      <workItem from="1665400317604" duration="952000" />
+      <workItem from="1665401349939" duration="6150000" />
+      <workItem from="1665427221219" duration="1378000" />
+      <workItem from="1665668276565" duration="23000" />
+      <workItem from="1665752416505" duration="5295000" />
+      <workItem from="1665761663948" duration="7634000" />
     </task>
+    <task id="LOCAL-00001" summary="update migrations">
+      <created>1665402885051</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665402885051</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add item, and item detalhe, to relationship produto and produto_detalhe example">
+      <created>1665402984058</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665402984058</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add new migration to relationship fornecedores and produtos fk">
+      <created>1665403025272</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403025272</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add - views produto_detalhe, edit, index, and create">
+      <created>1665403049670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403049670</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix - alter order seeds">
+      <created>1665403064801</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403064801</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat - add news column in table index">
+      <created>1665403115624</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403115624</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat - add produto_detalhe on return index method from produto">
+      <created>1665403154588</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403154588</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat - add produto_detalhe routes">
+      <created>1665403174746</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665403174746</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix - rename number migration, alter_produtos_relacionamento_fornecedores">
+      <created>1665756766038</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1665756766038</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat - add fornecedor select in form">
+      <created>1665756805563</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1665756805563</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat - add fornecedor in rules validate">
+      <created>1665756827925</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1665756827925</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat - add fornecedor_id in fillables">
+      <created>1665756839184</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1665756839184</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat - add produtos method relationship in fornecedor model">
+      <created>1665756905769</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1665756905769</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat - add produtos in table list fornecedores">
+      <created>1665756936524</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1665756936524</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat - send fornecedores array from controller to create view">
+      <created>1665757120571</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757120571</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat - send fornecedores array from controller to edit view">
+      <created>1665757129487</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757129487</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat - add fornecedor in paginante index, create, edit method's">
+      <created>1665757252900</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757252900</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat - add clientes-pedidos-produtos migrate">
+      <created>1665757272215</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757272215</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat - add Cliente Model">
+      <created>1665757279647</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757279647</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat - add Pedido Model">
+      <created>1665757284838</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757284838</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat - add PedidoController Model">
+      <created>1665757289819</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1665757289819</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,5 +364,30 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update migrations" />
+    <MESSAGE value="create produto_detalhe" />
+    <MESSAGE value="add item, and item detalhe, to relationship produto and produto_detalhe example" />
+    <MESSAGE value="add new migration to relationship fornecedores and produtos fk" />
+    <MESSAGE value="add - views produto_detalhe, edit, index, and create" />
+    <MESSAGE value="fix - alter order seeds" />
+    <MESSAGE value="feat - add news column in table index" />
+    <MESSAGE value="feat - add produto_detalhe on return index method from produto" />
+    <MESSAGE value="feat - add produto_detalhe routes" />
+    <MESSAGE value="fix - rename number migration, alter_produtos_relacionamento_fornecedores" />
+    <MESSAGE value="feat - add fornecedor select in form" />
+    <MESSAGE value="feat - add fornecedor in rules validate" />
+    <MESSAGE value="feat - add fornecedor_id in fillables" />
+    <MESSAGE value="feat - add produtos method relationship in fornecedor model" />
+    <MESSAGE value="feat - add produtos in table list fornecedores" />
+    <MESSAGE value="feat - send fornecedores array from controller to create view" />
+    <MESSAGE value="feat - send fornecedores array from controller to edit view" />
+    <MESSAGE value="feat - add fornecedor in paginante index, create, edit method's" />
+    <MESSAGE value="feat - add clientes-pedidos-produtos migrate" />
+    <MESSAGE value="feat - add Cliente Model" />
+    <MESSAGE value="feat - add Pedido Model" />
+    <MESSAGE value="feat - add PedidoController Model" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat - add PedidoController Model" />
   </component>
 </project>
