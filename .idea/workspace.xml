@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24d667be-6e05-4824-8f6f-81bd0716ba11" name="Changes" comment="feat - add PedidoController Model">
+    <list default="true" id="24d667be-6e05-4824-8f6f-81bd0716ba11" name="Changes" comment="feat - add PedidoProdutoController">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClienteController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Produto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Produto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app/cliente.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/app/layouts/_partials/topo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/layouts/_partials/topo.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PedidoProdutoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PedidoProdutoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Pedido.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Pedido.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/pedido-produto/_components/form_create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/pedido-produto/_components/form_create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/pedido-produto/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/pedido-produto/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app/produto/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/app/produto/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +201,10 @@
       <workItem from="1665427221219" duration="1378000" />
       <workItem from="1665668276565" duration="23000" />
       <workItem from="1665752416505" duration="5295000" />
-      <workItem from="1665761663948" duration="7634000" />
+      <workItem from="1665761663948" duration="12849000" />
+      <workItem from="1666012507263" duration="2056000" />
+      <workItem from="1666032288140" duration="5010000" />
+      <workItem from="1666093385460" duration="838000" />
     </task>
     <task id="LOCAL-00001" summary="update migrations">
       <created>1665402885051</created>
@@ -348,7 +353,28 @@
       <option name="project" value="LOCAL" />
       <updated>1665757289819</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat - add pedido views and components">
+      <created>1665769928799</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1665769928799</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat - add ClienteController">
+      <created>1665769981356</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1665769981356</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat - add PedidoProdutoController">
+      <created>1665769993559</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1665769993559</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,9 +392,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update migrations" />
-    <MESSAGE value="create produto_detalhe" />
-    <MESSAGE value="add item, and item detalhe, to relationship produto and produto_detalhe example" />
     <MESSAGE value="add new migration to relationship fornecedores and produtos fk" />
     <MESSAGE value="add - views produto_detalhe, edit, index, and create" />
     <MESSAGE value="fix - alter order seeds" />
@@ -388,6 +411,12 @@
     <MESSAGE value="feat - add Cliente Model" />
     <MESSAGE value="feat - add Pedido Model" />
     <MESSAGE value="feat - add PedidoController Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat - add PedidoController Model" />
+    <MESSAGE value="feat - add cliente views and components" />
+    <MESSAGE value="feat - add pedido views and components" />
+    <MESSAGE value="feat - add pedido-produto views" />
+    <MESSAGE value="feat - add ClienteController" />
+    <MESSAGE value="feat - add PedidoController" />
+    <MESSAGE value="feat - add PedidoProdutoController" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat - add PedidoProdutoController" />
   </component>
 </project>
