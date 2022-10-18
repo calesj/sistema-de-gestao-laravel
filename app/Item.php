@@ -16,4 +16,13 @@ class Item extends Model
     public function fornecedor() {
         return $this->belongsTo('App\Fornecedor');
     }
+
+    public function pedidos()
+    {
+        return $this->belongsToMany(Pedido::class, 'pedido_produtos', 'produto_id', 'pedido_id');
+        /*
+         * 3 - Representa o nome da FK na tabela de relacionamento
+         * 4 - Representa o nome da FK da tabela do relacionamento que estamos implementando
+         */
+    }
 }
